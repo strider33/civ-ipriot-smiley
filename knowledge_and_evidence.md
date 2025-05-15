@@ -70,15 +70,15 @@ python3 main.py
 
    | Type                    | name       | value          |
    | ----------              | ---------- | -------------- |
-   | built-in primitive type | _          |  _             |
-   | built-in composite type | _          |  _             |
+   | built-in primitive type | dimmed     |  True          |
+   | built-in composite type | YELLOW     |  (255,255,0)   |
    | user-defined type       | _          |  _             |
 
 2. Fill in (`_`) the following table based on the code in `smiley.py`:
 
    | Object                   | Type                    |
    | ------------             | ----------------------- |
-   | self.pixels              | _                       |
+   | self.pixels              | list                    |
    | A member of self.pixels  | _                       |
    | self                     | _                       |
 
