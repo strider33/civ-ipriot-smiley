@@ -72,32 +72,32 @@ python3 main.py
    | ----------              | ---------- | -------------- |
    | built-in primitive type | dimmed     |  True          |
    | built-in composite type | YELLOW     |  (255,255,0)   |
-   | user-defined type       | _          |  _             |
+   | user-defined type       |class Smiley|                |
 
 2. Fill in (`_`) the following table based on the code in `smiley.py`:
 
    | Object                   | Type                    |
    | ------------             | ----------------------- |
    | self.pixels              | list                    |
-   | A member of self.pixels  | _                       |
+   | A member of self.pixels  |                         |
    | self                     | _                       |
 
 3. Examine the code for `smiley.py`, `sad.py`, and `happy.py`. Give an example of each of the following control structures using an example from **each** of these files. Include the first line and the line range:
 
    | Control Flow | File       | First line  | Line range  |
    | ------------ | ---------- | ----------- | ----------- |
-   |  sequence    |  _         | _           | _           |
-   |  selection   | _          | _           | _           |
-   |  iteration   | _          | _           | _           |
+   |  sequence    |  smiley.py |self.pixels = [ | line range: 17-26
+   |  selection   | sad.py     |if wide_open:| 26-29       |
+   |  iteration   | sad.py     |for pixel in eyes:|25-31   |
 
 4. Though everything in Python is an object, it is sometimes said to have four "primitive" types. Examining the three files `smiley.py`, `sad.py`, and `happy.py`, identify which of the following types are used in any of these files, and give an example of each (use an example from the code, if applicable, otherwise provide an example of your own):
 
    | Type                    | Used? | Example |
    | ----------------------- | ----- | --------|
-   | int                     | _     | _          |
-   | float                   | _     | _          |
-   | str                     | _     | _          |
-   | bool                    | _     | _          |
+   | int                     | yes     | 10 used in (eyes = [10, 13, 18 21])     |
+   | float                   | yes   | delay=0.25 |
+   | str                     | no    | print("Hello")|
+   | bool                    | yes     |wide_open=True|
 
 5. Examining `smiley.py`, provide an example of a class variable and an instance variable (attribute). Explain **why** one is defined as a class variable and the other as an instance variable.
 
@@ -192,7 +192,7 @@ Unlike the `Happy` smiley, the current implementation of the `Sad` smiley does n
 
 1. Does the code's author believe that every `Smiley` should be able to blink? Explain.
 
-> Your answer here
+> Yes because in main it executes the blink funcion
 >
 
 2. For those smileys that blink, does the author expect them to blink in the same way? Explain.
