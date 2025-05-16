@@ -86,9 +86,9 @@ python3 main.py
 
    | Control Flow | File       | First line  | Line range  |
    | ------------ | ---------- | ----------- | ----------- |
-   |  sequence    |  smiley.py |self.pixels = [ | line range: 17-26
-   |  selection   | sad.py     |if wide_open:| 26-29       |
-   |  iteration   | sad.py     |for pixel in eyes:|25-31   |
+   |  sequence    |  smiley.py |`self.pixels = [`| line range: 17-26
+   |  selection   | sad.py     |`if wide_open:` | 26-29       |
+   |  iteration   | sad.py     |`for pixel in eyes:`|25-31   |
 
 4. Though everything in Python is an object, it is sometimes said to have four "primitive" types. Examining the three files `smiley.py`, `sad.py`, and `happy.py`, identify which of the following types are used in any of these files, and give an example of each (use an example from the code, if applicable, otherwise provide an example of your own):
 
@@ -100,19 +100,20 @@ python3 main.py
    | bool                    | yes     |wide_open=True|
 
 5. Examining `smiley.py`, provide an example of a class variable and an instance variable (attribute). Explain **why** one is defined as a class variable and the other as an instance variable.
-
-> Your answer here
+ 
+>An example of a class variable is WHITE, it is defined as class variable because it is created in the class but outside of a function or method. An instants variable is defined in a function.
 >
 
 6. Examine `happy.py`, and identify the constructor (initializer) for the `Happy` class:
    1. What is the purpose of a constructor (in general) and this one (in particular)?
 
-   > Your answer here
+   > `def __init__(self):`
+   this contructor is for initlizing the function when the class is called
    >
 
    2. What statement(s) does it execute (consider the `super` call), and what is the result?
 
-   > Your answer here
+   > its exectues the draw_mouth() and draw_eyes() function.
    >
 
 ### 2.3. Code style
