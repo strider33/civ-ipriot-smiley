@@ -121,16 +121,24 @@ python3 main.py
 1. What code style is used in the code? Is it likely to be the same as the code style used in the SenseHat? Give to reasons as to why/why not:
 
 > Your answer here
->
+>I think the code style is pep8 because the variables are whole words seperated by an underscore _.
+The codding style could be the same as sense_hat because the code uses whole words for variables, self is used in both and the function names are named simarlerlly.
 
 2. List three aspects of this convention you see applied in the code.
 
-> Your answer here
+> The conventions I see are using whole words that are seperated with under scores, using capital letters for contructor variables and using three quotes for comments.
 >
 
 3. Give two examples of organizational documentation in the code.
 
-> Your answer here
+> 
+         from smily.py 
+        `"""Set the SenseHat's light intensity to low (True) or high (False)
+        :param dimmed: Dim the display if True, otherwise don't dim
+        """`
+        
+        from sense_hat.py 
+        `"""tkinter GUI for the mock SenseHAT. Tkinter is not thread-safe, so we need to run it in a separate process."""`
 >
 
 ### 2.4. Identifying and understanding classes
@@ -143,7 +151,7 @@ python3 main.py
 
 | Class Name | Super or Sub? | Direct parent(s) |
 | ---------- | ------------- | ---------------- |
-| NotReal    | Sub           | NotRealParent    |
+| Smiley     | sub?           | Happy    |
 |   ...      |   ...         |      ...         |
 
 2. Explain the concept of abstraction, giving an example from the project (note "implementing an ABC" is **not** in itself an example of abstraction). (Max 150 words)
