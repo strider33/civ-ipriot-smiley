@@ -126,7 +126,7 @@ The codding style could be the same as sense_hat because the code uses whole wor
 
 2. List three aspects of this convention you see applied in the code.
 
-> The conventions I see are using whole words that are seperated with under scores, using capital letters for contructor variables and using three quotes for comments.
+> The conventions I see are using whole words that are seperated with under scores, using capital letters for variables and using three quotes for comments.{needs fixing !!!}
 >
 
 3. Give two examples of organizational documentation in the code.
@@ -136,7 +136,7 @@ The codding style could be the same as sense_hat because the code uses whole wor
         `"""Set the SenseHat's light intensity to low (True) or high (False)
         :param dimmed: Dim the display if True, otherwise don't dim
         """`
-        
+
         from sense_hat.py 
         `"""tkinter GUI for the mock SenseHAT. Tkinter is not thread-safe, so we need to run it in a separate process."""`
 >
@@ -151,17 +151,18 @@ The codding style could be the same as sense_hat because the code uses whole wor
 
 | Class Name | Super or Sub? | Direct parent(s) |
 | ---------- | ------------- | ---------------- |
-| Smiley     | sub?           | Happy    |
-|   ...      |   ...         |      ...         |
-
+| Smiley     |super          | Happy            |
+|   Happy    |sub            |Smiley, Blinkable |
+|Sad         |sub            |Smiley|
 2. Explain the concept of abstraction, giving an example from the project (note "implementing an ABC" is **not** in itself an example of abstraction). (Max 150 words)
 
-> Your answer here
->
+>Abstraction is hiding atributes that are not as important and so
+>that devlopers can focus on more important things 
+>an example is the class happy inheriting from the Smiley class and Blinkable class
 
 3. What is the name of the process of deriving from base classes? What is its purpose in this project? (Max 150 words)
 
-> Your answer here
+> inheritance, it is used in the is project by having the happy class inherit from the smiley class and blinkable class to be able to use its variables and functions.
 >
 
 ### 2.5. Compare and contrast classes
@@ -169,28 +170,29 @@ The codding style could be the same as sense_hat because the code uses whole wor
 Compare and contrast the classes Happy and Sad.
 
 1. What is the key difference between the two classes?
-   > Your answer here
+   > Sad dosn't inherit from the blinkable class, and dosent have a blink function like happy does.
    >
 2. What are the key similarities?
-   > Your answer here
+   > they both inherit from smiley and both have draw mouth and eyes functions
    >
 3. What difference stands out the most to you and why?
-   > Your answer here
+   > The lack of a blink function in Sad
    >
 4. How does this difference affect the functionality of these classes
-   > Your answer here
+   > The Sad class cant blink like the Happy function can.
    >
 
 ### 2.6. Where is the Sense(Hat) in the code?
 
 1. Which class(es) utilize the functionality of the SenseHat?
-   > Your answer here
-   >
+   >- Smilely
+   >- Sad through Smiley
+   >- Happy using methods from Smiley
 2. Which of these classes directly interact with the SenseHat functionalities?
-   > Your answer here
+   > Smiley talks to SenseHat directly
    >
 3. Discuss the hiding of the SenseHAT in terms of encapsulation (100-200 Words)
-   > Your answer here
+   > There are a lot of variables within the methods of the SenseHat class that are hidden when only using the other classes, Sensehat is not referenced directly out side of the smiley class, the other classes use the smiley class to talk to sensehat 
    >
 
 ### 2.7. Sad Smileys Can’t Blink (Or Can They?)
@@ -207,7 +209,7 @@ Unlike the `Happy` smiley, the current implementation of the `Sad` smiley does n
 2. For those smileys that blink, does the author expect them to blink in the same way? Explain.
 
 > Your answer here
->
+>The author expects them to blink in the same way because because it uses a sleep function to control the delay for the blick, this is set the with a single value that can be changed when using the function. It also uses a time.sleep function set to 1 in main.py
 
 3. Referring to the implementation of blink in the Happy and Sad Smiley classes, give a brief explanation of what polymorphism is.
 
