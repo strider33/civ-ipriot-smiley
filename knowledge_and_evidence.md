@@ -213,12 +213,13 @@ Unlike the `Happy` smiley, the current implementation of the `Sad` smiley does n
 
 3. Referring to the implementation of blink in the Happy and Sad Smiley classes, give a brief explanation of what polymorphism is.
 
-> Your answer here
->
+>polymorphism is when classes share a common super class and the blink method gets stuff from abc and then blink in the Happy class has access to variables and methods from Smiley and Blinkable  {come back latter!}
+
+
 
 4. How is inheritance used in the blink method, and why is it important for polymorphism?
 
-> Your answer here
+> The blick method is used both in the class blinkable and happy, the blinkable class inhirites abc, and the happy class inhiretes blinkable, it uses...
 >
 1. **Implement Blink in Sad Class:**
 
