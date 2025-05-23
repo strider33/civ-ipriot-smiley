@@ -6,12 +6,13 @@ class Smiley:
     GREEN = (0, 255, 0)
     RED = (255, 0, 0)
     YELLOW = (255, 255, 0)
+    BLUE = (0,0,255)
     BLANK = (0, 0, 0)
 
     def __init__(self):
         # We have encapsulated the SenseHat object
         self.sense_hat = SenseHat()
-
+        print(type(self.YELLOW))
         Y = self.YELLOW
         O = self.BLANK
         self.pixels = [
