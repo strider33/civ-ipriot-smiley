@@ -213,7 +213,7 @@ Unlike the `Happy` smiley, the current implementation of the `Sad` smiley does n
 
 3. Referring to the implementation of blink in the Happy and Sad Smiley classes, give a brief explanation of what polymorphism is.
 
->Polymorphism is when classes share a common super class and the blink method gets stuff from abc and then blink in the Happy class has access to variables and methods from Smiley and Blinkable. 
+>Polymorphism is when classes share a common super class and the blink method gets atributes from abc. Then blink in the Happy class has access to variables and methods from Smiley and Blinkable. 
 >
 >Polymorphism is when there are multible classes with comman elements inhireting from one supper class.
 
