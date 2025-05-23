@@ -113,7 +113,7 @@ python3 main.py
 
    2. What statement(s) does it execute (consider the `super` call), and what is the result?
 
-   > its exectues the draw_mouth() and draw_eyes() function.
+   > it executes the draw_mouth() and draw_eyes() function.
    >
 
 ### 2.3. Code style
@@ -121,12 +121,12 @@ python3 main.py
 1. What code style is used in the code? Is it likely to be the same as the code style used in the SenseHat? Give to reasons as to why/why not:
 
 > Your answer here
->I think the code style is pep8 because the variables are whole words seperated by an underscore _.
-The codding style could be the same as sense_hat because the code uses whole words for variables, self is used in both and the function names are named simarlerlly.
+>I think the code style is pep8 because the variables are whole words separated by an underscore _.
+The codding style could be the same as sense_hat because the code uses whole words for variables, self is used in both and the function names are named simlarly.
 
 2. List three aspects of this convention you see applied in the code.
 
-> The conventions I see are using whole words that are seperated with under scores, using capital letters for variables and using three quotes for comments.{needs fixing !!!}
+> The conventions I see are using whole words that are separated with under scores, using capital letters for variables and using three quotes for comments.{needs fixing !!!}
 >
 
 3. Give two examples of organizational documentation in the code.
@@ -156,8 +156,8 @@ The codding style could be the same as sense_hat because the code uses whole wor
 |Sad         |sub            |Smiley|
 2. Explain the concept of abstraction, giving an example from the project (note "implementing an ABC" is **not** in itself an example of abstraction). (Max 150 words)
 
->Abstraction is hiding atributes that are not as important and so
->that devlopers can focus on more important things 
+>Abstraction is hiding attributes that are not as important and so
+>that developers can focus on more important things 
 >an example is the class happy inheriting from the Smiley class and Blinkable class
 
 3. What is the name of the process of deriving from base classes? What is its purpose in this project? (Max 150 words)
@@ -170,7 +170,7 @@ The codding style could be the same as sense_hat because the code uses whole wor
 Compare and contrast the classes Happy and Sad.
 
 1. What is the key difference between the two classes?
-   > Sad dosn't inherit from the blinkable class, and dosent have a blink function like happy does.
+   > Sad doesn't inherit from the blinkable class, and doesn't have a blink function like happy does.
    >
 2. What are the key similarities?
    > they both inherit from smiley and both have draw mouth and eyes functions
@@ -185,7 +185,7 @@ Compare and contrast the classes Happy and Sad.
 ### 2.6. Where is the Sense(Hat) in the code?
 
 1. Which class(es) utilize the functionality of the SenseHat?
-   >- Smilely
+   >- Smiley
    >- Sad through Smiley
    >- Happy using methods from Smiley
 2. Which of these classes directly interact with the SenseHat functionalities?
@@ -203,13 +203,13 @@ Unlike the `Happy` smiley, the current implementation of the `Sad` smiley does n
 
 1. Does the code's author believe that every `Smiley` should be able to blink? Explain.
 
-> Yes because in main it executes the blink funcion
+> Yes because in main it executes the blink function
 >
 
 2. For those smileys that blink, does the author expect them to blink in the same way? Explain.
 
 > Your answer here
->The author expects them to blink in the same way because because it uses a sleep function to control the delay for the blick, this is set the with a single value that can be changed when using the function. It also uses a time.sleep function set to 1 in main.py
+>The author expects them to blink in the same way because because it uses a sleep function to control the delay for the blink, this is set the with a single value that can be changed when using the function. It also uses a time.sleep function set to 1 in main.py
 
 3. Referring to the implementation of blink in the Happy and Sad Smiley classes, give a brief explanation of what polymorphism is.
 
@@ -219,7 +219,7 @@ Unlike the `Happy` smiley, the current implementation of the `Sad` smiley does n
 
 4. How is inheritance used in the blink method, and why is it important for polymorphism?
 
-> The blick method is used both in the class blinkable and happy, the blinkable class inhirites abc, and the happy class inhiretes blinkable, it uses...
+> The blink method is used both in the class blinkable and happy, the blinkable class inherites abc, and the happy class inheretes blinkable, it uses...
 >
 1. **Implement Blink in Sad Class:**
 
@@ -242,7 +242,7 @@ Include a screenshot of the sad smiley or the modified `main.py`:
 
 - Observe and document the Sad smiley as it blinks its eyes. Describe any adjustments or issues encountered during implementation.
 
-  > I dont recall any issuse, other than forgting to import some things.
+  > I dont recall any issues, other than forgetting to import some things.
 
   ### 2.8. If It Walks Like a Duck…
 
@@ -254,11 +254,11 @@ Include a screenshot of the sad smiley or the modified `main.py`:
 
   2. **Class Implementation:** `Blinkable` is a class intended to be implemented by other classes. What generic term describes this kind of class, which is designed for implementation by others? **Clue**: Notice the lack of any concrete implementation and the naming convention.
 
-  > terms for the kind of class it is are Child class, subclass or descendants. ac class that is used to be inhirted by other classes is called a supper class or ancestor
+  > terms for the kind of class it is are Child class, subclass or descendants. abc class that is used to be inherited by other classes is called a super class or ancestor
 
   3. **OO Principle Identification:** Regarding your answer to question (2), which Object-Oriented (OO) principle does this represent? Choose from the following and justify your answer in 1-2 sentences: Abstraction, Polymorphism, Inheritance, Encapsulation.
 
-  > It is inheritance because it is inheriting from other classes making things from that class avlaible to the class inhirting from the parent class.
+  > It is inheritance because it is inheriting from other classes making things from that class available to the class inheriting from the parent class.
 
   4. **Implementation Flexibility:** Explain why you could grant the Sad Smiley a blinking feature similar to the Happy Smiley's implementation, even without directly using `Blinkable`.
 
@@ -266,7 +266,7 @@ Include a screenshot of the sad smiley or the modified `main.py`:
 
   5. **Concept and Language Specificity:** In relation to your response to question (4), what is this capability known as, and why is it feasible in Python and many other dynamically typed languages but not in most statically typed programming languages like C#? **Clue** This concept is hinted at in the title of this section.
 
-  >It is called duck typing, it is not possible because in staticaly typed languges like c or c# you have to be specify what type is being used.
+  >It is called duck typing, it is not possible because in a statically typed languages like C or C# you have to be specify what type is being used.
 
   ***
 
@@ -279,7 +279,7 @@ Include a screenshot of the sad smiley or the modified `main.py`:
   1. **Defined Colors and Their Location:**
 
      1. Which colors are defined and in which class(s)?
-        > WHITE, GREEN, RED and YELLOW are in the simley class
+        > WHITE, GREEN, RED and YELLOW are in the smiley class
      2. What type of variables hold these colors? Are the values expected to change during the program's execution? Explain your answer.
         > They are tupls so I assume there not expected to change.
      3. Add the color blue to the appropriate class using the appropriate format and values.
@@ -291,7 +291,7 @@ Include a screenshot of the sad smiley or the modified `main.py`:
 
   3. **Simple Method to Change Colors:**
   4. What is the easiest way you can think to change the smileys to green? Easiest, not necessarily the best!
-     > Change YELLOW to green by changeing its value, not the best because the name whon't match the colour.
+     > Change YELLOW to green by changing its value, not the best because the name won't match the colour.
 
   Here's a revised version of the "Flexible Colors – Step 1" section for the smiley project, incorporating your specifications for formatting and content updates:
 
