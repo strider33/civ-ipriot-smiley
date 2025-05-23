@@ -108,12 +108,12 @@ python3 main.py
    1. What is the purpose of a constructor (in general) and this one (in particular)?
 
    > `def __init__(self):`
-   this contructor is for initlizing the function when the class is called
-   >
+   This contructor is for initlizing the function when the class is called.
+   
 
    2. What statement(s) does it execute (consider the `super` call), and what is the result?
 
-   > it executes the draw_mouth() and draw_eyes() function.
+   > It executes the `draw_mouth()` and `draw_eyes()` function.
    >
 
 ### 2.3. Code style
