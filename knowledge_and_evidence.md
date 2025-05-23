@@ -122,11 +122,11 @@ python3 main.py
 
 > Your answer here
 >I think the code style is pep8 because the variables are whole words separated by an underscore _.
-The codding style could be the same as sense_hat because the code uses whole words for variables, self is used in both and the function names are named simlarly.
+The codding style could be the same as sense_hat because the code uses whole words for The variables, self is used in both and the function names are named similarly.
 
 2. List three aspects of this convention you see applied in the code.
 
-> The conventions I see are using whole words that are separated with under scores, using capital letters for variables and using three quotes for comments.{needs fixing !!!}
+> The conventions I see are using whole words that are separated with under scores, using capital letters for the color variables and using three quotes for comments.
 >
 
 3. Give two examples of organizational documentation in the code.
@@ -162,7 +162,7 @@ The codding style could be the same as sense_hat because the code uses whole wor
 
 3. What is the name of the process of deriving from base classes? What is its purpose in this project? (Max 150 words)
 
-> inheritance, it is used in the is project by having the happy class inherit from the smiley class and blinkable class to be able to use its variables and functions.
+> inheritance, it is used in the project by having the happy class inherit from the smiley class and blinkable class to be able to use its variables and functions.
 >
 
 ### 2.5. Compare and contrast classes
@@ -192,7 +192,7 @@ Compare and contrast the classes Happy and Sad.
    > Smiley talks to SenseHat directly
    >
 3. Discuss the hiding of the SenseHAT in terms of encapsulation (100-200 Words)
-   > There are a lot of variables within the methods of the SenseHat class that are hidden when only using the other classes, Sensehat is not referenced directly out side of the smiley class, the other classes use the smiley class to talk to sensehat 
+   > There are a lot of variables within the methods of the SenseHat class that are hidden when only using the other classes, SenseHat is not referenced directly out side of the smiley class, the other classes use the smiley class to talk to SenseHat 
    >
 
 ### 2.7. Sad Smileys Can’t Blink (Or Can They?)
@@ -209,17 +209,19 @@ Unlike the `Happy` smiley, the current implementation of the `Sad` smiley does n
 2. For those smileys that blink, does the author expect them to blink in the same way? Explain.
 
 > Your answer here
->The author expects them to blink in the same way because because it uses a sleep function to control the delay for the blink, this is set the with a single value that can be changed when using the function. It also uses a time.sleep function set to 1 in main.py
+>The author expects them to blink in the same way because it uses a sleep function to control the delay for the blink, this is set with a single value that can be changed when using the function. It also uses a `time.sleep` function set to 1 in main.py
 
 3. Referring to the implementation of blink in the Happy and Sad Smiley classes, give a brief explanation of what polymorphism is.
 
->polymorphism is when classes share a common super class and the blink method gets stuff from abc and then blink in the Happy class has access to variables and methods from Smiley and Blinkable  {come back latter!}
+>Polymorphism is when classes share a common super class and the blink method gets stuff from abc and then blink in the Happy class has access to variables and methods from Smiley and Blinkable. 
+>
+>Polymorphism is when there are multible classes with comman elements inhireting from one supper class.
 
 
 
 4. How is inheritance used in the blink method, and why is it important for polymorphism?
 
-> The blink method is used both in the class blinkable and happy, the blinkable class inherites abc, and the happy class inheretes blinkable, it uses...
+> The blink methods in the Sad and Happy class both inherit from smiley, this is important for polymorphism because it is how the classes are able to share simler atributes from one supper class.
 >
 1. **Implement Blink in Sad Class:**
 
@@ -254,7 +256,7 @@ Include a screenshot of the sad smiley or the modified `main.py`:
 
   2. **Class Implementation:** `Blinkable` is a class intended to be implemented by other classes. What generic term describes this kind of class, which is designed for implementation by others? **Clue**: Notice the lack of any concrete implementation and the naming convention.
 
-  > terms for the kind of class it is are Child class, subclass or descendants. abc class that is used to be inherited by other classes is called a super class or ancestor
+  > Terms for the kind of class it is are Child class, subclass or descendants. The abc class that is used to be inherited by other classes is called a super class or ancestor.
 
   3. **OO Principle Identification:** Regarding your answer to question (2), which Object-Oriented (OO) principle does this represent? Choose from the following and justify your answer in 1-2 sentences: Abstraction, Polymorphism, Inheritance, Encapsulation.
 
